@@ -2,14 +2,18 @@
   export let text: string
 </script>
 
-<h1>Hello <span>{text}!</span></h1>
+<div>
+  <h1 class="text-red-500">Hello <span class="text-blue-500">{text}!</span></h1>
+
+  <div class="example">
+    <p>some text here</p>
+  </div>
+</div>
 
 <style lang="scss">
-  h1 {
-    color: red;
-
-    span {
-      color: blue;
+  .example {
+    p {
+      color: green;
     }
   }
 </style>
